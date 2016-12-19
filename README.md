@@ -99,7 +99,7 @@ len(neo_group)  #グループに属するエージェントの総数．
 それぞれの識別番号を有するエージェントがすべてグループに属する場合に`True`を返す．
 それ以外は`False`を返す．  
 
-- **get_all_agent_no**(*excep=None*)  
+- **get_all_agent_no**(*self, excep=None*)  
 *excep* : エージェントまたはエージェントのリスト（タプル）．  
 <u>*Return*</u> : エージェントの識別番号のリスト．  
 グループに属するエージェントのうち，
@@ -191,7 +191,7 @@ len(neo_env)  #環境に属するグループの総数．
 それぞれの識別番号を有するグループがすべて環境に属する場合に`True`を返す．
 それ以外は`False`を返す．  
 
-- **get_all_group_no**(*excep=None*)  
+- **get_all_group_no**(*self, excep=None*)  
 *excep* : グループまたはグループのリスト（タプル）．  
 <u>*Return*</u> : グループの識別番号のリスト．  
 環境に属するグループのうち，
