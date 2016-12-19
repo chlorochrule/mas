@@ -62,11 +62,11 @@ class NeoAgentGroup(mas.AgentGroup):
     #NeoAgentGroup特有の機能や性質を記述する．
 
 #10人のグループを作成する．
-neo_ag = NeoAgentGroup(agents=[Agent() for _ in range(10)])
+neo_group = NeoAgentGroup(agents=[Agent() for _ in range(10)])
 #10回繰り返す．
-for agent in neo_ag:
+for agent in neo_group:
   agent.name  #エージェントの名前の取得．
-len(neo_ag)  #グループに属するエージェントの総数．
+len(neo_group)  #グループに属するエージェントの総数．
 ```
 
 ### Attributes  
@@ -79,7 +79,7 @@ len(neo_ag)  #グループに属するエージェントの総数．
 
 ### Methods  
 - **set_label**(*self, label*)/**get_label**(*self*)  
-グループラベルのsetter/getter．グループラベルの詳細は[こちら](#annot3)．  
+グループラベルのsetter/getter．グループラベルの詳細は[こちら](#annot4)．  
 
 - <a id="add_agent"></a>**add_agent**(*self, agents*)  
 *agents* : エージェントまたはエージェントのリスト（タプル）．  

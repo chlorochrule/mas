@@ -1,5 +1,4 @@
 #-*- coding: utf-8 -*-
-#mas v1.0.0
 import mas
 import time
 import random
