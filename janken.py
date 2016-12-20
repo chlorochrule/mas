@@ -164,16 +164,14 @@ if __name__ == '__main__':
                         #プレイヤー p がハンドとじゃんけんの結果をもとに学習する．
                         p.rein_learn(h, r)
 
-    #標準出力の文字コード．
-    coding_of_stdio = 'cp932'
     #100回繰り返した後の学習ありのプレイヤーの確率分布の平均．
-    print '100回繰り返した後の学習ありのプレイヤーの確率分布の平均'.encode(coding_of_stdio)
-    print '[グーの確率, チョキの確率, パーの確率]'.encode(coding_of_stdio)
-    print [sum(a.prob[i] for a in jan_env.rein_group)/len(jan_env.rein_group) for i in range(3)]
-    print '----------'
+    print('100回繰り返した後の学習ありのプレイヤーの確率分布の平均')
+    print('[グーの確率, チョキの確率, パーの確率]')
+    print([sum(a.prob[i] for a in jan_env.rein_group)/len(jan_env.rein_group) for i in range(3)])
+    print('----------')
     #100回繰り返した後の学習ありのプレイヤーのスコアの平均．
-    print '100回繰り返した後の学習ありのプレイヤーのスコアの平均'.encode(coding_of_stdio)
-    print sum(a.score for a in jan_env.rein_group)/float(len(jan_env.rein_group))
-    print '----------'
+    print('100回繰り返した後の学習ありのプレイヤーのスコアの平均')
+    print(sum(a.score for a in jan_env.rein_group)/float(len(jan_env.rein_group)))
+    print('----------')
     #処理の実行時間
-    print 'elapsed time: {} [s]'.format(time.time() - start_time)
+    print('elapsed time: {} [s]'.format(time.time() - start_time))
